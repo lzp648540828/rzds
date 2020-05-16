@@ -1,0 +1,17 @@
+body, p, h1, h2, h3, h4, h5, h6, div, ul, ol, li{
+	margin: 0 ;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-size: 14px;
+}
+a {
+	text-decoration: none;
+}
+html {
+	overflow: hidden;
+}
+body {
+	overflow: hidden;
+}
+

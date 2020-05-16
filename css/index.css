@@ -1,0 +1,181 @@
+.center {
+	width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.mall-top {
+	background-color: #f2f2f2;
+}
+.mall-top .center {
+	height: 32px;
+	line-height: 32px;
+}
+.mall-top .center .top-left {
+	width: 400px;
+	position: relative;
+}
+.top-left .icon-location {
+	width: 15px;
+	height: 17px;
+	margin: 0 3px;
+	background: url(../img/logoicons.png) no-repeat 0 1px;	
+	float: left;
+	position:relative;
+	top: 8px;
+}
+.top-left .top-left-province {
+	float: left;
+	margin-right: 4px;
+}
+.top-left .top-left-location {
+	float: left;
+	margin-right: 8px;
+}
+.top-left .icon-phone {
+	width: 15px;
+	height: 17px;
+	margin: 0 3px;
+	background: url(../img/logoicons.png) no-repeat 0 -14px;	
+	float: left;
+	position: relative;
+	top: 8px;
+}
+.top-left .top-left-phone {
+	color: #e61f59;
+}
+.top-right ul li {
+	float: left;
+}
+.top-right ul div {
+	border-left: 1px solid black;
+	height:20px;
+	float: left;
+	position: relative;
+	top: 6px;
+	margin: 0 6px;
+}
+.top-right ul li a {
+	display: block;
+	padding: 0 4px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #696969;
+}
+.top-right .icon-paid {
+	width: 18px;
+	height: 18px;
+	margin: 0 3px;
+	background: url(../img/logoicons.png) no-repeat 0 -30px;	
+	float: left;
+	position: relative;
+	top: 8px;
+	border-left: 0;
+	parding: 4px;
+}
+
+.top-head {
+	height:135px;
+	width: 200px;
+}
+
+.mall-head .head-logo{
+	width: 200px;
+	height: 135px;
+	background: url(../img/oglogo.jpeg)
+}
+.mall-head .head-right{
+	margin-top: 43px;
+	margin-right: 100px;
+}
+.head-right .search-main{
+	width: 550px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	background-color:red;
+}
+.search-main .search-text{
+	width: 456px;
+	height: 40px;
+	border: 2px solid #e61f59;
+	box-sizing: border-box;
+	padding: 6px;
+	outline: none;
+}
+.search-main .search-btn{
+	width: 94px;
+	height: 40px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+.search-btn a {
+	display: block;
+	height: 100%;
+	width: 94px;
+	line-height: 40px;
+	position: relative;
+	padding-left: 45px;
+	color: #fff;
+}
+.search-btn .icon-search {
+	background: url(../img/searchicon001.png) no-repeat 1px 1px;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	left: 12px;
+}
+.head-right .search-categroy{
+	margin-top: 10px;
+}
+.search-categroy ul li {
+	float: left;
+	margin: 0 5px;
+}
+.search-categroy ul li a {
+	color: #696969;
+}
+
+.mall-nar {
+	
+}
+.mall-nav .nav-bar {
+	height: 32px;
+	margin-left: 240px;
+	display: flex;
+	justify-content:space-between;
+}
+.nav-bar li {
+	height: 32px;
+	margin: 0 15px;
+	font-size: 14px;
+}
+.nav-bar li a {
+	color: #000;
+}
+.mall-carousel {
+	overflow: hidden;
+}
+.mall-carousel .carousel-images{
+	width: 1200px;
+	height: 560px;
+	overflow: hidden;
+}
+.carousel-images ul {
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.carousel-images ul li a {
+	width: 1200px;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+}
+.carousel-images ul li a img {
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
