@@ -41,27 +41,30 @@
     };
     let goToIndex = function(event) {
         let current  = event.currentTarget;
-        if(current === slideList[index]) return;
+        if(current.getAttribute("index") === index.toString()) return;
 
         slideList[index].classList.remove("active");
         nodeList[index].classList.remove("visible");
         current.classList.add("active");
-        index = new Number(current.getAttribute("index"));
+        index = new Number(current.getAttribute("index")).valueOf();
         nodeList[index].classList.add("visible");
 
     };
-    setInterval(()=>{
-        let next = document.querySelector("#next-btn");
-        next.onclick();
-    },3000);
-    window.onload = function () {
+
+    function load() {
         let previous = document.querySelector("#previous-btn");
         let next = document.querySelector("#next-btn");
         previous.onclick = previousTip;
         next.onclick = nextTip;
         slideList.forEach((e)=>{
             e.onclick = goToIndex;;
-        })
+        });
+        setInterval(()=>{
+            let next = document.querySelector("#next-btn");
+            next.onclick();
+        },3000);
     };
+    window.addEventListener("load",load);
+
 })();
 
