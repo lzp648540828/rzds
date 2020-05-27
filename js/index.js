@@ -65,6 +65,9 @@
         },3000);
     };
     window.addEventListener("load",load);
+})();
+
+(function () {
 
 })();
 
