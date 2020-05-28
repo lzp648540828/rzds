@@ -547,12 +547,11 @@
     background-color: #d81e28!important;
 }
 .mall-new-arrival {
-    padding-top: 30px;
+    padding: 30px 0 50px;
     background-color: #f4f4f4;
 }
 .mall-new-arrival .new-arrival-head {
     margin: 0 auto;
-
 }
 .mall-new-arrival .new-arrival-head img {
     width: 100%;
@@ -626,4 +625,22 @@
     font-size: 12px;
     line-height: 20px;
     box-sizing: border-box;
+}
+
+.mall-new-arrival .more-brand {
+    width: 204px;
+    heigth: 45px;
+    margin: 20px auto 0px;
+    line-height: 45px;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.mall-new-arrival .more-brand a {
+    display: block;
+    text-decoration: none;
+    color: #666666;
+    font-size: 16px;
 }
