@@ -278,7 +278,7 @@
     height: 560px;
     background-color: rgba(0,0,0,.8);
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 50%;
     transform: translateX(-600px);
 }
@@ -315,7 +315,7 @@
     font-size: 12px;
 }
 .carousel-categroy-left ul li ul li:first-child {
-    margin-left: 0px;
+    margin-left: 0;
 }
 .carousel-categroy-left ul li a{
     color: #ffffff;
@@ -365,7 +365,6 @@
     display: block;
 }
 .top-right button {
-    border: 0px;
     width: 33px;
     height: 22px;
     display: inline-block;
@@ -461,16 +460,39 @@
     display: block;
 }
 .carousel .images .f1 .left {
-    background: url("../img/5168114037e143633f693cc5f15323a1.jpeg");
+    background: url("../img/ximensi3.jpeg");
 }
 .carousel .images .f1 .center {
     background: url("../img/39304e7b38247293690b6d35543c8688.jpeg");
 }
 .carousel .images .f1 .right {
+     background: url("../img/928c872aa3b381b781c3139f690c191f.jpeg");
+}
+.carousel .images .f2 .left {
+    background: url("../img/ximensi3.jpeg");
+}
+.carousel .images .f2 .center {
+    background: url("../img/39304e7b38247293690b6d35543c8688.jpeg");
+}
+.carousel .images .f2 .right {
     background: url("../img/928c872aa3b381b781c3139f690c191f.jpeg");
 }
-
-
-
-
+.carousel .images .f3 .left {
+    background: url("../img/ximensi3.jpeg");
+}
+.carousel .images .f3 .center {
+    background: url("../img/39304e7b38247293690b6d35543c8688.jpeg");
+}
+.carousel .images .f3 .right {
+    background: url("../img/928c872aa3b381b781c3139f690c191f.jpeg");
+}
+.carousel .images .f4 .left {
+    background: url("../img/ximensi3.jpeg");
+}
+.carousel .images .f4 .center {
+    background: url("../img/39304e7b38247293690b6d35543c8688.jpeg");
+}
+.carousel .images .f4 .right {
+    background: url("../img/928c872aa3b381b781c3139f690c191f.jpeg");
+}
 
