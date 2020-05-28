@@ -562,7 +562,7 @@
     margin-top: 35px;
 }
 .new-arrival-body {
-
+    color: #666666;
 }
 .new-arrival-body ul {
     margin: 0 auto;
@@ -570,9 +570,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 1199px;
-    height: 1180px;
+    height: 790px;
 }
 .new-arrival-body ul li {
     width: 393px;
     height: 390px;
+    background-color: #fff;
 }
