@@ -546,3 +546,33 @@
 .carousel-index li.active {
     background-color: #d81e28!important;
 }
+.mall-new-arrival {
+    padding-top: 30px;
+    background-color: #f4f4f4;
+}
+.mall-new-arrival .new-arrival-head {
+    margin: 0 auto;
+
+}
+.mall-new-arrival .new-arrival-head img {
+    width: 100%;
+    height: 100%;
+}
+.mall-new-arrival .new-arrival-body {
+    margin-top: 35px;
+}
+.new-arrival-body {
+
+}
+.new-arrival-body ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1199px;
+    height: 1180px;
+}
+.new-arrival-body ul li {
+    width: 393px;
+    height: 390px;
+}
