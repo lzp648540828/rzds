@@ -637,10 +637,71 @@
     text-align: center;
     border-radius: 6px;
 }
-
 .mall-new-arrival .more-brand a {
     display: block;
     text-decoration: none;
     color: #666666;
     font-size: 16px;
 }
+
+.mall-intelligence-banner {
+    background-color: #f4f4f4;
+}
+
+.mall-intelligence-banner a {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.mall-house-case {
+    background-color: #f4f4f4;
+}
+
+.mall-house-case .center {
+    display: block;
+}
+
+.mall-house-case img {
+    margin-bottom: 35px;
+}
+
+.mall-house-case ul {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #666666;
+    box-sizing: border-box;
+}
+
+.mall-house-case ul li {
+    width: 120px;
+    height: 92px;
+    padding-top: 17px;
+    box-sizing: border-box;
+}
+
+.mall-house-case ul li a {
+    color: #666666;
+    padding: 10px;
+    display: block;
+    border-right: 1px solid #666666;
+}
+
+.mall-house-case ul li:last-child a {
+    border-right: 0px;
+}
+
+.mall-house-case a h5 {
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mall-house-case a h6 {
+    font-size: 9px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
