@@ -704,4 +704,70 @@
     text-align: center;
 }
 
+.mall-house-case .house-case-body {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.house-case-body .hc-body-left {
+    width: 600px;
+    height: 400px;
+}
+
+.hc-body-left .images {
+
+}
+
+.hc-body-left li {
+    width: 600px;
+    height: 400px;
+}
+
+.hc-body-left ul li {
+
+}
+
+.hc-body-left ul li a {
+    display: block;
+    height: 100%;
+}
+
+.hc-body-left .i1 {
+    background: url("");
+}
+
+.hc-body-left .i2 {
+    background: url("");
+}
+
+.house-case-body .hc-body-center {
+    width: 293px;
+    height: 400px;
+}
+
+.body-center-top {
+    width: 293px;
+    height: 195px;
+    background: url("../img/389125aee371bec18bd0c34e28bc3291.jpeg");
+}
+
+.body-center-buttom {
+    width: 293px;
+    height: 195px;
+    margin-top: 10px;
+    background: url("../img/8c3b7f8c9c653768690023ffc6fcecc7.jpeg");
+}
+
+.house-case-body .hc-body-right {
+    width: 287px;
+    height: 400px;
+    background: url("../img/fabc8baf03816fd0faf7dc097c844503.jpeg");
+}
+
+.house-case-body a {
+    display: block;
+    height: 100%;
+}
+
 
