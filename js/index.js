@@ -88,7 +88,7 @@
 
 new carousel(".mall-carousel .carousel-images  li", ".mall-carousel .carousel-slide li", "#previous-btn", "#next-btn").load();
 new carousel(".mall-famous .carousel .images li", ".mall-famous .carousel .carousel-index li", "#famous-btn-previous", "#famous-btn-next").load();
-new carousel(".mall-house-case .images li", ".mall-house-case .hc-slide li", "#hc-pre-btn", "#hc-next-btn").load();
+new carousel(".mall-house-case .images li", ".mall-house-case .hc-body-left .hc-slide li", "#hc-pre-btn", "#hc-next-btn").load();
 
 
 

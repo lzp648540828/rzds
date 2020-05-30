@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+    overflow-y: visible;
+}
 .center {
     width: 1200px;
     display: flex;
@@ -82,12 +86,10 @@
     border-left: 0;
     parding: 4px;
 }
-
 .top-head {
     height:135px;
     width: 200px;
 }
-
 .mall-head .head-logo{
     width: 200px;
     height: 135px;
@@ -145,7 +147,6 @@
 .search-categroy ul li a {
     color: #696969;
 }
-
 .mall-nar {
 
 }
@@ -349,7 +350,6 @@
 .carousel-categroy-left .icon4 {
     background-position-x: -70px;
 }
-
 .mall-bargain {
     margin-top: 48px;
     display: block;
@@ -552,6 +552,8 @@
 }
 .mall-new-arrival .new-arrival-head {
     margin: 0 auto;
+    width: 1200px;
+    height: 113px;
 }
 .mall-new-arrival .new-arrival-head img {
     width: 100%;
@@ -576,42 +578,33 @@
     height: 390px;
     background-color: #fff;
 }
-
 .new-arrival-body .brand1 {
     background: url("../img/brand.jpeg");
 }
-
 .new-arrival-body .brand2 {
     background: url("../img/brand2.jpeg");
 }
-
 .new-arrival-body .brand3 {
     background: url("../img/brand3.jpeg");
 }
-
 .new-arrival-body .brand4 {
     background: url("../img/brand4.jpeg");
 }
-
 .new-arrival-body .brand5 {
     background: url("../img/brand5.jpeg");
 }
-
 .new-arrival-body .brand6 {
     background: url("../img/brand6.jpeg");
 }
-
 .new-arrival-body div {
     width: 108px;
     height: 54px;
     margin: 6px auto;
 }
-
 .new-arrival-body p {
     text-align: center;
     line-height: 20px;
 }
-
 .new-arrival-body a {
     text-decoration: none;
     display: block;
@@ -626,7 +619,6 @@
     line-height: 20px;
     box-sizing: border-box;
 }
-
 .mall-new-arrival .more-brand {
     width: 204px;
     heigth: 45px;
@@ -643,29 +635,23 @@
     color: #666666;
     font-size: 16px;
 }
-
 .mall-intelligence-banner {
     background-color: #f4f4f4;
 }
-
 .mall-intelligence-banner a {
     display: block;
     margin: 0 auto;
     width: 1200px;
 }
-
 .mall-house-case {
     background-color: #f4f4f4;
 }
-
 .mall-house-case .center {
     display: block;
 }
-
 .mall-house-case img {
     margin-bottom: 35px;
 }
-
 .mall-house-case .house-case-head ul {
     width: 1200px;
     display: flex;
@@ -673,55 +659,47 @@
     border: 1px solid #666666;
     box-sizing: border-box;
 }
-
 .mall-house-case ul li {
     width: 120px;
     height: 92px;
     padding-top: 17px;
     box-sizing: border-box;
 }
-
 .mall-house-case .house-case-head ul li a {
     color: #666666;
     padding: 10px;
     display: block;
     border-right: 1px solid #666666;
 }
-
 .mall-house-case .house-case-head ul li:last-child a {
     border-right: 0px;
 }
-
 .mall-house-case a h5 {
     font-size: 16px;
     margin: 0 auto;
     text-align: center;
 }
-
 .mall-house-case a h6 {
     font-size: 9px;
     margin: 0 auto;
     text-align: center;
 }
-
 .mall-house-case .house-case-body {
     margin-top: 18px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 80px;
 }
-
 .house-case-body .hc-body-left {
     width: 600px;
     height: 400px;
     position: relative;
 }
-
 .hc-body-left .images {
     position: relative;
     width: 600px;
     height: 400px;
 }
-
 .hc-body-left .images li {
     width: 600px;
     height: 400px;
@@ -731,7 +709,6 @@
     padding: 0;
     opacity: 0;
 }
-
 .hc-body-left .images li a {
     display: block;
     height: 100%;
@@ -743,7 +720,6 @@
 .hc-body-left .i2 {
     background: url("../img/e10fe61110d6610b01110c1406e1cb8a.jpeg");
 }
-
 .hc-body-left .hc-pre-btn {
     position: absolute;
     top: 50%;
@@ -752,12 +728,7 @@
     width: 36px;
     height: 48px;
     background-color: rgba(0, 0, 0, .5);
-    color: #fff;
-    text-align: center;
-    line-height: 48px;
-    font-size: 20px;
 }
-
 .hc-body-left .hc-next-btn {
     position: absolute;
     top: 50%;
@@ -766,10 +737,72 @@
     width: 36px;
     height: 48px;
     background-color: rgba(0, 0, 0, .5);
+}
+
+.hc-body-left a {
+    display: block;
+    height: 100%;
     color: #fff;
     text-align: center;
     line-height: 48px;
     font-size: 20px;
+}
+
+.hc-body-left .left-title {
+    width: 280px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 12px solid rgba(255, 255, 255, .7);
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+.hc-body-left .left-title .left-title-border {
+    background-color: rgba(255, 255, 255, .7);
+    height: 100%;
+}
+
+.left-title-border p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+}
+
+.left-title-border .line {
+    border-top: 1px solid #666666;
+    width: 170px;
+    margin: 0 auto;
+}
+
+.house-case-body .hc-body-left .hc-slide {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    width: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+    top: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.hc-body-left .hc-slide li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 0;
+}
+
+.hc-body-left .hc-slide li.active {
+    background-color: #d81e28;
 }
 .house-case-body .hc-body-center {
     width: 293px;
@@ -780,23 +813,76 @@
     height: 195px;
     background: url("../img/389125aee371bec18bd0c34e28bc3291.jpeg");
 }
-
 .body-center-buttom {
     width: 293px;
     height: 195px;
     margin-top: 10px;
     background: url("../img/8c3b7f8c9c653768690023ffc6fcecc7.jpeg");
 }
-
 .house-case-body .hc-body-right {
     width: 287px;
     height: 400px;
     background: url("../img/fabc8baf03816fd0faf7dc097c844503.jpeg");
+    position: relative;
 }
 
+.hc-body-right .right-title {
+    width: 235px;
+    height: 154px;
+    border: 5px solid rgba(255, 255, 255, .7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.right-title p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.right-title p.top {
+    width: 223px;
+    height: 72px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.right-title p.btm {
+    width: 223px;
+    height: 72px;
+}
+
+.right-title .line {
+    border-top: 1px solid #fff;
+    width: 170px;
+    margin: 0 auto;
+}
 .house-case-body a {
     display: block;
     height: 100%;
+}
+
+.mall-big-banner {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mall-big-banner a {
+    display: block;
+    width: 1920px;
+    height: 400px;
+    background: url("../img/banner.jpeg");
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 
