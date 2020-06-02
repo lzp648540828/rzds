@@ -869,7 +869,8 @@ html {
 
 .mall-big-banner {
     width: 1200px;
-    margin: 0 auto;
+    height: 400px;
+    margin: 0 auto 40px;
     position: relative;
 }
 
@@ -885,4 +886,130 @@ html {
 
 }
 
+.mall-living-room {
 
+}
+
+.choiceness .center {
+    display: block;
+}
+
+.choiceness .ch-top:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.choiceness .ch-top {
+    border-bottom: 1px solid #989898;
+}
+
+.choiceness .ch-top-left {
+    float: left;
+}
+
+.ch-top-left .span-kt {
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+}
+
+.ch-top-left .span-en {
+    font-size: 16px;
+    color: #999;
+    margin-left: 10px;
+}
+
+.choiceness .ch-top-right {
+    float: right;
+}
+
+.ch-top-right ul {
+    width: 382px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 35px;
+    color: #333;
+}
+
+.ch-top-right ul li:hover {
+    font-weight: 900;
+    border-bottom: 2px solid #000;
+}
+
+.ch-top-right ul li a {
+    color: #333;
+    height: 100%;
+}
+
+.ch-center {
+    width: 1200px;
+    height: 420px;
+    margin-top: 10px;
+}
+
+.ch-center .ch-center-left {
+    width: 292px;
+    height: 420px;
+    background-color: #6e8b9d;
+    padding-top: 56px;
+    box-sizing: border-box;
+}
+
+.ch-center-left h1 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.ch-center-left h2 {
+    color: rgba(255, 255, 255, .5);
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.ch-center-left ul {
+    width: 237px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px auto 0;
+}
+
+.ch-center-left ul li {
+    width: 111px;
+    height: 37px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.ch-center-left ul li a {
+    height: 37px;
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 10px;
+    font-weight: 400;
+
+}
+
+.ch-center .ch-center-right {
+    width: 900px;
+    height: 420px;
+}
+
+.ch-center .ch-center-right .photo {
+}
+
+.ch-center .ch-center-right .discription {
+
+}
