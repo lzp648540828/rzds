@@ -890,6 +890,9 @@ html {
 
 }
 
+.choiceness {
+    margin-bottom: 70px;
+}
 .choiceness .center {
     display: block;
 }
@@ -946,7 +949,9 @@ html {
 .ch-center {
     width: 1200px;
     height: 420px;
-    margin-top: 10px;
+    margin: 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .ch-center .ch-center-left {
@@ -1003,13 +1008,105 @@ html {
 }
 
 .ch-center .ch-center-right {
-    width: 900px;
+    width: 898px;
     height: 420px;
 }
 
-.ch-center .ch-center-right .photo {
+.ch-center .ch-center-right ul {
+    width: 898px;
+    height: 420px;
+    position: relative;
 }
 
-.ch-center .ch-center-right .discription {
+.ch-center .ch-center-right ul li {
+    position: absolute;
+    width: 898px;
+    height: 420px;
+}
+
+.ch-center .ch-center-right ul li img {
+    background-color: blue;
+    display: block;
+    width: 898px;
+    height: 420px;
+}
+
+.ch-center .ch-center-right ul li p {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    font-size: 16px;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #ffffff;
+    padding-left: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ch-center-right ul li p .price {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+
+.ch-bottom {
+    height: 290px;
+    overflow: hidden;
+}
+
+.ch-bottom ul {
+    height: 290px;
+    width: 20000px;
+    /*overflow: hidden;*/
 
 }
+
+.ch-bottom ul:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.ch-bottom ul li {
+    width: 292px;
+    height: 290px;
+    margin-right: 10px;
+    float: left;
+}
+
+.ch-bottom ul li a {
+    display: block;
+    width: 292px;
+    height: 290px;
+    background-color: #f8f8f8;
+}
+
+.ch-bottom a div {
+    width: 292px;
+    height: 195px;
+}
+
+.ch-bottom a div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ch-bottom a h1 {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    margin-top: 28px;
+    font-weight: 400;
+}
+
+.ch-bottom a h2 {
+    text-align: center;
+    color: #e61f59;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
