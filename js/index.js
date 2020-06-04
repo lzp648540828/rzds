@@ -5,6 +5,7 @@
     function carousel(itemSelect, dotSelect, preBtn, nextBtn) {
         //记录当前显示的item的索引
         this.index = 0;
+        this.timer = null;
 
         //获取轮播的item和指示器
         this.nodeList = document.querySelectorAll(itemSelect);
@@ -55,6 +56,9 @@
 
     //点击指示器切换到对应item
     carousel.prototype.goToIndex = function (event) {
+
+        clearInterval(this.timer);
+
         //点击的获取指示器
         let current  = event.currentTarget;
 
@@ -70,17 +74,26 @@
         this.index = Number(current.getAttribute("index")).valueOf();
         this.nodeList[this.index].classList.add("visible");
     };
+    carousel.prototype.mouseout = function () {
+        this.timer = setInterval(() => {
+            this.nextTip();
+        }, 5000);
+    }
 
     //绑定事件
     carousel.prototype.load = function () {
-        this.preBtn.onclick = carousel.prototype.previousTip.bind(this);
-        this.nextBtn.onclick = carousel.prototype.nextTip.bind(this);
-
+        if (this.preBtn !== null) {
+            this.preBtn.onclick = carousel.prototype.previousTip.bind(this);
+        }
+        if (this.nextBtn !== null) {
+            this.nextBtn.onclick = carousel.prototype.nextTip.bind(this);
+        }
         this.slideList.forEach((e) => {
-            e.onclick = this.goToIndex.bind(this);
+            e.onmouseover = this.goToIndex.bind(this);
+            e.onmouseout = this.mouseout.bind(this);
         });
-        setInterval(()=>{
-            this.nextBtn.onclick();
+        this.timer = setInterval(() => {
+            this.nextTip();
         },5000);
     }
     window.carousel = carousel;
@@ -89,6 +102,9 @@
 new carousel(".mall-carousel .carousel-images  li", ".mall-carousel .carousel-slide li", "#previous-btn", "#next-btn").load();
 new carousel(".mall-famous .carousel .images li", ".mall-famous .carousel .carousel-index li", "#famous-btn-previous", "#famous-btn-next").load();
 new carousel(".mall-house-case .images li", ".mall-house-case .hc-body-left .hc-slide li", "#hc-pre-btn", "#hc-next-btn").load();
+new carousel(".mall-living-room .ch-center-right li", ".mall-living-room .ch-top-right li").load();
+new carousel(".mall-dining-room .ch-center-right li", ".mall-dining-room .ch-top-right li").load();
+new carousel(".mall-bad-room .ch-center-right li", ".mall-bad-room .ch-top-right li").load();
 
 
 
