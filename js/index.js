@@ -54,9 +54,9 @@
     };
 
 
-    //点击指示器切换到对应item
+    //hover指示器切换到对应item
     carousel.prototype.goToIndex = function (event) {
-
+        //清除定时器达到hover停止自动轮播的效果
         clearInterval(this.timer);
 
         //点击的获取指示器
@@ -69,7 +69,7 @@
         this.slideList[this.index].classList.remove("active");
         this.nodeList[this.index].classList.remove("visible");
 
-        //显示点击的，并更新索引
+        //显示hover的，并更新索引
         current.classList.add("active");
         this.index = Number(current.getAttribute("index")).valueOf();
         this.nodeList[this.index].classList.add("visible");
@@ -80,7 +80,7 @@
         }, 5000);
     }
 
-    //绑定事件
+    //给DOM绑定事件
     carousel.prototype.load = function () {
         if (this.preBtn !== null) {
             this.preBtn.onclick = carousel.prototype.previousTip.bind(this);
@@ -99,6 +99,7 @@
     window.carousel = carousel;
 })();
 
+//新建轮播实例
 new carousel(".mall-carousel .carousel-images  li", ".mall-carousel .carousel-slide li", "#previous-btn", "#next-btn").load();
 new carousel(".mall-famous .carousel .images li", ".mall-famous .carousel .carousel-index li", "#famous-btn-previous", "#famous-btn-next").load();
 new carousel(".mall-house-case .images li", ".mall-house-case .hc-body-left .hc-slide li", "#hc-pre-btn", "#hc-next-btn").load();
