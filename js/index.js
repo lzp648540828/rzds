@@ -108,4 +108,19 @@ new carousel(".mall-dining-room .ch-center-right li", ".mall-dining-room .ch-top
 new carousel(".mall-bad-room .ch-center-right li", ".mall-bad-room .ch-top-right li").load();
 
 
+(function () {
+    let list = document.querySelectorAll("#partner-list li");
+    for (let i = 0; i < list.length; i++) {
+        list[i].style.background = "url(img/33e2c771c17b6ddfa3ab6fd1805460ea.jpg) no-repeat " + -232 * i + "px 0px";
+    }
+})();
+
+(function () {
+    let list = document.querySelectorAll(".mall-foot .top ul li .img");
+    for (let i = 0; i < list.length; i++) {
+        list[i].style.background = "url(img/logo_ico3.png) no-repeat " + -65 * i + "px 0px";
+    }
+})();
+
+
 
